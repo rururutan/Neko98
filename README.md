@@ -8,3 +8,6 @@ For a detailed description of Neko's history, try the new Neko Fan Page.
 - Create more than one Neko
 - Use any icon library (.icl) to change how Neko appears
 - Make Neko chase the mouse or run around anywhere!
+
+# License
+Neko 95/98 Source Code License
