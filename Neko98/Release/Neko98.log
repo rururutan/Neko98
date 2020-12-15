@@ -1,5 +1,5 @@
 ﻿  AlwaysOnTopPet.cpp
-AlwaysOnTopPet.cpp(42): warning C4302: '型キャスト': 'LPSTR' から 'WORD' へ切り詰めます。
+C:\Users\leiqunni\Documents\GitHub\Neko98\Neko98\AlwaysOnTopPet.cpp(42,33): warning C4302: '型キャスト': 'LPSTR' から 'WORD' へ切り詰めます。
   DesktopHack.cpp
   DesktopPet.cpp
   Neko.cpp
@@ -8,5 +8,4 @@ AlwaysOnTopPet.cpp(42): warning C4302: '型キャスト': 'LPSTR' から 'WORD' 
   Pet.cpp
   Tray.cpp
   コードを生成中...
-  Neko98.vcxproj -> C:\Users\leiqunni\Documents\GitHub\Neko98\Neko98\.\Release\Neko98.exe
-  Neko98.vcxproj -> .\Release\Neko98.pdb (Full PDB)
+  Neko98.vcxproj -> C:\Users\leiqunni\Documents\GitHub\Neko98\Neko98\Release\Neko98.exe

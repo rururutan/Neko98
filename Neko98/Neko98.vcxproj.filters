@@ -7,128 +7,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Res\Awake.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\Down1.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\down2.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\downclaw1.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\downclaw2.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\downleft1.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\Downleft2.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\Downright1.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\downright2.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\fp_down.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\fp_downleft.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\fp_downright.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\fp_left.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\fp_right.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\fp_up.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\fp_upleft.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\fp_upright.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\left1.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\left2.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\leftclaw1.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\leftclaw2.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\Right1.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\right2.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\rightclaw1.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\Rightclaw2.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\scratch1.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\scratch2.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\sleep1.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\sleep2.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\Up1.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\Up2.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\upclaw1.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\upclaw2.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\Upleft1.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\Upleft2.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\Upright1.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\Upright2.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\wash2.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\yawn2.ico">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="Res\yawn3.ico">
-      <Filter>Resources</Filter>
-    </Image>
-  </ItemGroup>
-  <ItemGroup>
     <ResourceCompile Include="Neko95.rc">
       <Filter>Resources</Filter>
     </ResourceCompile>
@@ -152,5 +30,127 @@
     <ClInclude Include="NekoSettings.h" />
     <ClInclude Include="Pet.h" />
     <ClInclude Include="Tray.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Res\fp_upright.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Left1.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Left2.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Leftclaw1.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Leftclaw2.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Right1.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Right2.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Rightclaw1.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Rightclaw2.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Scratch1.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Scratch2.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Sleep1.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Sleep2.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Up2.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Upclaw1.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Upclaw2.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Upleft1.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Upleft2.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Upright1.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Upright2.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Wash2.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Yawn2.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Yawn3.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Awake.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Down1.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Down2.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Downclaw1.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Downclaw2.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Downleft1.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Downleft2.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Downright1.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Downright2.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\fp_down.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\fp_downleft.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\fp_downright.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\fp_left.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\fp_right.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\fp_up.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\fp_upleft.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Res\Up1.ico">
+      <Filter>Resources</Filter>
+    </Image>
   </ItemGroup>
 </Project>
