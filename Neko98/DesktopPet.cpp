@@ -17,7 +17,8 @@ CDesktopPet::CDesktopPet() : CDesktopHack(), CPet()
 	m_nUpdateHWndCounter = 0;
 
 	//set bounds
-	GetDesktopRect(m_rcBounds);
+//	GetDesktopRect(m_rcBounds);
+	SetRect(&m_rcBounds, 0, 0, GetSystemMetrics(SM_CXVIRTUALSCREEN) - 1, GetSystemMetrics(SM_CYVIRTUALSCREEN) - 1);
 }
 
 CDesktopPet::~CDesktopPet()
@@ -45,7 +46,8 @@ void CDesktopPet::Draw(int nImage)
 	//increment the update counter and update if required
 	if (++m_nUpdateHWndCounter > UPDATE_COUNTER_MAX) {
 		FindDesktopHandle();
-		GetDesktopRect(m_rcBounds);
+//		GetDesktopRect(m_rcBounds);
+		SetRect(&m_rcBounds, 0, 0, GetSystemMetrics(SM_CXVIRTUALSCREEN) - 1, GetSystemMetrics(SM_CYVIRTUALSCREEN) - 1);
 	}
 }
 

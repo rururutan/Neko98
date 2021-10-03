@@ -48,7 +48,7 @@ CAlwaysOnTopPet::CAlwaysOnTopPet() : CPet()
 	}
 
 	//set bounding rectangle
-	SetRect(&m_rcBounds, 0, 0, GetSystemMetrics(SM_CXSCREEN) - 1, GetSystemMetrics(SM_CYSCREEN) - 1);
+	SetRect(&m_rcBounds, 0, 0, GetSystemMetrics(SM_CXVIRTUALSCREEN) - 1, GetSystemMetrics(SM_CYVIRTUALSCREEN) - 1);
 
 	//move this pet off-screen to start with
 	m_ptPosition.x = m_rcBounds.right;
