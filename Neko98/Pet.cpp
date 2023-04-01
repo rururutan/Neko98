@@ -131,7 +131,8 @@ void CPet::MoveTo(int nNewX, int nNewY)
 	m_ptPosition.y = nNewY;
 
 	//redraw
-	Draw(m_nLastIcon);
+	if (m_nLastIcon != -1)
+		Draw(m_nLastIcon);
 }
 
 void CPet::SetImageAndMoveTo(int nImage, int nNewX, int nNewY)
