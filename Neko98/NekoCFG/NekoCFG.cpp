@@ -183,7 +183,7 @@ BOOL CALLBACK DlgProc_NewNeko( HWND hDlg, UINT uMsg, WPARAM wParam, LPARAM lPara
                     catSettings = cat;
 
                     //add it to the list box & select it
-                    int i = SendDlgItemMessage( GetParent(hDlg), IDC_NAME, LB_ADDSTRING, 0, (LPARAM)szName );
+                    LRESULT i = SendDlgItemMessage( GetParent(hDlg), IDC_NAME, LB_ADDSTRING, 0, (LPARAM)szName );
                     SendDlgItemMessage( GetParent(hDlg), IDC_NAME, LB_SETCURSEL, i, 0 );
                     PostMessage( GetParent(hDlg), WM_COMMAND, MAKEWPARAM(IDC_NAME, CBN_SELCHANGE), 0 );
 
@@ -273,7 +273,7 @@ BOOL CALLBACK DlgProc_Config( HWND hDlg, UINT uMsg, WPARAM wParam, LPARAM lParam
 
                 case IDC_DELETE:
                 {
-                    int iItem = SendDlgItemMessage( hDlg, IDC_NAME, LB_GETCURSEL, 0, 0 );
+                    LRESULT iItem = SendDlgItemMessage( hDlg, IDC_NAME, LB_GETCURSEL, 0, 0 );
                     char szDoomed[MAX_NEKO_NAME] = "";
 
                     //get string
@@ -316,7 +316,7 @@ BOOL CALLBACK DlgProc_Config( HWND hDlg, UINT uMsg, WPARAM wParam, LPARAM lParam
                 case IDC_NAME:
                     if( HIWORD(wParam) == LBN_SELCHANGE )
                     {
-                        int iNew = SendDlgItemMessage( hDlg, IDC_NAME, LB_GETCURSEL, 0, 0 );
+                        LRESULT iNew = SendDlgItemMessage( hDlg, IDC_NAME, LB_GETCURSEL, 0, 0 );
                         char szNew[MAX_NEKO_NAME] = "";
 
                         //get string and enable delete if it's not the default item (first)

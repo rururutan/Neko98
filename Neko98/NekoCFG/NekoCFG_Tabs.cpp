@@ -74,8 +74,10 @@ void WINAPI InitialisePropertyDialog( HWND hWnd )
 {
     int i;
 
+    UINT dpi = GetDpiForWindow(hWnd);
+
     //create the image list
-    g_himgTabIcons = ImageList_Create( 16, 16, ILC_COLOR4|ILC_MASK, NUM_PAGES, 0 );
+    g_himgTabIcons = ImageList_Create( 16 * dpi / 96, 16 * dpi / 96, ILC_COLOR4|ILC_MASK, NUM_PAGES, 0 );
     for( i = 0; i < NUM_PAGES; i++ )
     {
         HICON hIcon = (HICON)LoadImage( g_hInstance, MAKEINTRESOURCE(tibTabs[i].uIDIcon), IMAGE_ICON, 0, 0, LR_DEFAULTSIZE );
@@ -101,8 +103,8 @@ void WINAPI InitialisePropertyDialog( HWND hWnd )
     GetWindowRect( hWnd, &g_rcTabStart );
     ScreenToClient( GetParent(hWnd), (LPPOINT)&g_rcTabStart.left );
     ScreenToClient( GetParent(hWnd), (LPPOINT)&g_rcTabStart.right );
-    g_rcTabStart.top += 42;
-    g_rcTabStart.left += 3;
+    g_rcTabStart.top += 42 * dpi / 96;
+    g_rcTabStart.left += 3 * dpi / 96;
 
     //store the handle and show the first page
     g_hWndTab = hWnd;
@@ -375,7 +377,7 @@ BOOL CALLBACK PropPage_Sound( HWND hPage, UINT uMsg, WPARAM wParam, LPARAM lPara
 
                 case IDC_NONE:
                 {
-                    int iCurSel = SendDlgItemMessage( hPage, IDC_SOUNDSAVAIL, LB_GETCURSEL, 0, 0 );
+                    LRESULT iCurSel = SendDlgItemMessage( hPage, IDC_SOUNDSAVAIL, LB_GETCURSEL, 0, 0 );
 
                     strcpy( (char*)SendDlgItemMessage( hPage, IDC_SOUNDSAVAIL, LB_GETITEMDATA, iCurSel, 0 ), "" );
 

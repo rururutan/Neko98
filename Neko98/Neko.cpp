@@ -465,7 +465,7 @@ BOOL CNeko::LoadImages()
 		hIcons[n] = ExtractIcon(g_hInstance, m_szLibname, n);
 
 	//check last icon
-	if ((UINT)hIcons[31] <= 1) {
+	if (hIcons[31] == NULL || (INT_PTR)(hIcons[31]) == 1) {
 		//error - delete all icons
 		for (n = 0; n < 32; n++) DestroyIcon(hIcons[n]);
 
