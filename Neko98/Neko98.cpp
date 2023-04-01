@@ -25,11 +25,12 @@ DWORD g_dwSleepTime = 100;
 
 BOOL g_fNeedReinit = TRUE;
 
+UINT g_TaskBarRestart = WM_NULL;
 
 /* ExecuteConfigProcess - runs the configuration program *******************************/
 void ExecuteConfigProcess()
 {
-	if ((int)ShellExecute(NULL, "open", "NekoCFG.EXE", 0, "", SW_SHOWNORMAL) <= 32)
+	if ((INT_PTR)ShellExecute(NULL, "open", "NekoCFG.EXE", 0, "", SW_SHOWNORMAL) <= 32)
 		MessageBox(NULL, "Neko was unable to start the configuration program\n'NekoCFG.EXE'\n\nMake sure that this file is in the same folder as the main Neko program.", "Configure Neko", MB_ICONEXCLAMATION);
 }
 
@@ -94,7 +95,23 @@ void LoadConfiguration()
 /* WndProc - message processing function for the hidden Neko window ********************/
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
+	if( message != WM_NULL && message == g_TaskBarRestart ) {
+		if( Tray->GetCount() != 0 ) {
+			Tray->RemoveIcon( g_hWndMain, 1 );
+		}
+		if( g_fTaskbar ) {
+			Tray->AddIcon( g_hWndMain,
+						   LoadIcon( g_hInstance,
+									 MAKEINTRESOURCE( IDI_AWAKE )), 1 );
+		}
+	}
+
 	switch (message) {
+	case WM_CREATE:
+		g_TaskBarRestart = RegisterWindowMessage("TaskbarCreated");
+		DefWindowProc( hWnd, message, wParam, lParam );
+		break;
+
 	case WM_DESTROY:
 		//terminate the program
 		PostQuitMessage(0);
